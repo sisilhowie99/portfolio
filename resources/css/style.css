@@ -1,3 +1,4 @@
+/* GLOBAL STYLE SETTINGS */
 * {
     margin: 0;
     padding: 0;
@@ -5,20 +6,20 @@
 }
 
 html {
+    height: 100%;
     min-width: 480px;
     min-height: max-content;
 }
 
 header {
+    border: 1px solid black;
     width: 100%;
     height: auto;
     display: flex;
-    position: fixed;
-    top: 0;
-    z-index: 2;
-    background-color: #fff;
-    opacity: 0.8;
-    color: #000;
+    margin: auto auto 2% auto;
+    padding: 1.5%;
+    background-color: rgb(216, 216, 216);
+    opacity: 0.5;
     font-weight: bold;
     text-align: center;
     align-items: center;
@@ -27,9 +28,8 @@ header {
 
 #name {
     margin: 0;
-    padding: 2%;
+    padding-bottom: 1.5%;
     color: #000;
-    text-decoration: none;
 }
 
 nav {
@@ -38,36 +38,44 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2% auto;
 }
 
 nav a {
     width: 100%;
     color: #000;
-    text-decoration: none;
-    margin: 2%;
     padding: 1.5%;
 }
 
 nav a:hover {
-    background-color: #808080;
-    color: #fff;
+    background-color: #fff;
     text-decoration: none;
     border-radius: 25px;
 }
 
+/* HOMEPAGE STYLES */
 .welcome {
+    border: 1px solid black;
     width: 100%;
     height: auto;
     display: flex;
-    position: relative;
-    top: 16em;
     text-align: center;
-    color: #fff;
+    /* color: #fff; */
     justify-content: center;
     align-items: center;
     align-content: center;
+    /* background-image: url('../img/html-code.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat; */
 }
+
+/* .welcome article {
+    width: auto;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+} */
 
 a.btn {
     margin: 2%;
@@ -75,11 +83,28 @@ a.btn {
     font-weight: bold;
 }
 
+/* EDUCATION & EXPERIENCES PAGES STYLES */
+
+/* PROJECTS PAGE STYLES */
+
+/* ABOUT PAGE STYLES */
+
+.profile-pic {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* CONTACTS PAGE STYLES */
+
+
+/* GLOBAL STYLE SETTINGS */
 footer {
+    border: 1px solid black;
     width: 100%;
     height: auto;
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;
+    bottom: 0; */
     background-color: #fff;
     opacity: 0.8;
     color: #000;
@@ -109,13 +134,9 @@ footer h4 {
     text-decoration: none;
 }
 
-/* @media only screen and (min-width: 720px) {
-    .welcome {
-        top: 16em;
-    }
-} */
+/* GLOBAL MEDIA QUERIES */
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 480px) {
     nav {
         display: flex;
         width: 100%;
@@ -132,9 +153,19 @@ footer h4 {
         margin: 3.5% auto;
     }
 
-    .welcome {
+    /* .welcome {
         width: 100%;
-        height: auto;
-        top: 12em;
-    }
+        height: 200px;
+        top: 10em;
+    } */
+
+}
+
+@media only screen and (min-width: 1000px) and (min-height: 720px) {
+    /* .welcome {
+        width: 100%;
+        height: 609px;
+        position: relative;
+        top: 14em;
+    } */
 }

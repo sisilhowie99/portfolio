@@ -68,7 +68,6 @@ nav a:hover {
 
 /* HOMEPAGE STYLES */
 a.btn {
-    margin: 2%;
     padding: 2%;
     font-weight: bold;
 }
@@ -122,6 +121,18 @@ a.btn {
 }
 
 /* PROJECTS PAGE STYLES */
+.projects {
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 2% 5%;
+}
 
 /* ABOUT PAGE STYLES */
 .bio {

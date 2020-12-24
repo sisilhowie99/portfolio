@@ -12,7 +12,9 @@ html {
 }
 
 .bg-img-1,
-.bg-img-2 {
+.bg-img-2,
+.bg-img-3,
+.bg-img-4 {
     min-height: 300px;
     position: relative;
     background-size: cover;
@@ -36,6 +38,15 @@ html {
 
 .bg-img-2 {
     background-image: url('../img/setup-1.jpg');
+}
+
+.bg-img-3 {
+    background-image: url('../img/brisbane/brisbane-sign.jpg');
+}
+
+.bg-img-4 {
+    min-height: 400px;
+    background-image: url('../img/profile-pic.jpg');
 }
 
 #name {
@@ -95,7 +106,8 @@ a.btn {
     margin: 0;
 }
 
-#work-experiences, #volunteer-experiences {
+#work-experiences,
+#volunteer-experiences {
     width: 80%;
     height: 100%;
     margin: 2% auto;
@@ -138,6 +150,7 @@ a.btn {
 .bio {
     width: 100%;
     height: auto;
+    margin: 3% auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,7 +161,6 @@ a.btn {
 .bio h1 {
     width: 100%;
     height: auto;
-    margin: 3% auto;
     text-align: center;
 }
 
@@ -166,12 +178,41 @@ a.btn {
     text-align: center;
 }
 
+.languages p {
+    font-size: 1.3em;
+}
+
 .prog-language {
     margin: 2.5%;
 }
 
 /* CONTACTS PAGE STYLES */
+.contact {
+    width: 80%;
+    height: auto;
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
 
+.contact p {
+    font-size: 1.3em;
+}
+
+#contact-details {
+    width: 100%;
+    height: auto;
+    margin: 5% auto;
+    text-align: center;
+}
+
+#contact-details a img {
+    margin: auto 5%;
+}
 
 /* GLOBAL STYLE SETTINGS */
 footer {
@@ -199,14 +240,6 @@ footer h4 {
 .social-media {
     width: 100%;
     height: auto;
-}
-
-.fa-github,
-.fa-linkedin,
-.fa-envelope,
-.fa-facebook {
-    margin: auto 2.5%;
-    text-decoration: none;
 }
 
 /* GLOBAL MEDIA QUERIES */

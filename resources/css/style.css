@@ -18,8 +18,8 @@ header {
     display: flex;
     margin: auto auto 2% auto;
     padding: 1.5%;
-    background-color: rgb(216, 216, 216);
-    opacity: 0.5;
+    /* background-color: rgb(216, 216, 216);
+    opacity: 0.5; */
     font-weight: bold;
     text-align: center;
     align-items: center;
@@ -89,11 +89,36 @@ a.btn {
 
 /* ABOUT PAGE STYLES */
 
-.profile-pic {
-    width: 250px;
+.bio {
+    width: 100%;
     height: auto;
-    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
+
+.bio h1 {
+    width: 100%;
+    height: auto;
+    margin: 3% auto;
+    text-align: center;
+}
+
+.bio article p {
+    width: 85%;
+    height: auto;
+    margin: auto;
+}
+
+.languages {
+    width: auto;
+    height: 100%;
+    margin: 4% auto;
+    text-align: center;
+}
+
 
 /* CONTACTS PAGE STYLES */
 
@@ -132,6 +157,10 @@ footer h4 {
 .fa-facebook {
     margin: auto 2.5%;
     text-decoration: none;
+}
+
+.prog-language {
+    margin: 2.5%;
 }
 
 /* GLOBAL MEDIA QUERIES */

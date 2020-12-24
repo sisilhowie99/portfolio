@@ -21,14 +21,27 @@
 </head>
 
 <style>
-    body {
-        margin-top: 20px;
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 2em;
+        row-gap: 2em;
+    }
+
+    .logo {
+        width: 250px;
+        height: auto;
+        padding: 5%;
+    }
+
+    .desc {
+        padding-left: 3.5%;
     }
 </style>
 
 <body>
-    <header>
-        <h1 id='name'>Sisilia Anastasia Howie</h1>
+    <header class='bg-img-1'>
+        <h1>Sisilia Anastasia Howie</h1>
 
         <nav>
             <a href='./index.html'>Home</a>
@@ -43,6 +56,8 @@
     <main>
         <section id='education'>
             <div class="timeline grid-container">
+                <img src='./resources/img/education/griffith-uni.png' alt='Griffith University logo'
+                    class='grid-item logo' />
                 <div class="event grid-item">
                     <h3>Bachelor of Information Technology</h3>
                     <p class='location duration'>
@@ -50,11 +65,13 @@
                         Brisbane, Queensland, Australia <br>
                         February 2020 - present
                     </p>
-                    <p class='desc'>
-                        Expected graduation in November 2021.<br>
-                        Major in Software Development
-                    </p>
+                    <ul class='desc'>
+                        <li>Expected graduation in November 2021</li>
+                        <li>Major in Software Development</li>
+                    </ul>
                 </div>
+                <img src='./resources/img/education/griffith-college.png' alt='Griffith College logo'
+                    class='grid-item logo' />
                 <div class="event grid-item">
                     <h3>Diploma of Information Technology</h3>
                     <p class='location duration'>
@@ -62,10 +79,11 @@
                         Brisbane, Queensland, Australia <br>
                         February 2019 - November 2019
                     </p>
-                    <p class='desc'>
-                        Credit transferred to university as first-year credit
-                    </p>
+                    <ul class='desc'>
+                        <li>Credit transferred to university as first-year credit</li>
+                    </ul>
                 </div>
+                <img src='./resources/img/education/tafe-qld.jpg' alt='TAFE Queensland logo' class='grid-item logo' />
                 <div class="event grid-item">
                     <h3>Certificate 3 in Information, Digital Media and Technlogy (Networking)</h3>
                     <p class='location duration'>
@@ -73,20 +91,14 @@
                         Brisbane, Queensland, Australia <br>
                         June 2018 - November 2018
                     </p>
-                    <p class='desc'>
-                        An introduction to computer networking using content from Cisco Networking.
-                    </p>
-                </div>
-                <div class="event grid-item">
-                    <h3>Closing Ceremony</h3>
-                    <p>See how is the victor and who are the losers. The big stage is where the
-                        winners bask
-                        in their own glory.</p>
+                    <ul class='desc'>
+                        <li>An introduction to computer networking using content from Cisco Networking</li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
-    
+
     <footer>
         <h4>Made by Sisilia Anastasia Howie</h4>
         <div class='social-media'>

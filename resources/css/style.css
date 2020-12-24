@@ -11,30 +11,44 @@ html {
     min-height: max-content;
 }
 
-header {
-    border: 1px solid black;
-    width: 100%;
-    height: auto;
-    display: flex;
-    margin: auto auto 2% auto;
-    padding: 1.5%;
-    /* background-color: rgb(216, 216, 216);
-    opacity: 0.5; */
+.bg-img-1,
+.bg-img-2 {
+    min-height: 300px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
     font-weight: bold;
-    text-align: center;
-    align-items: center;
+    opacity: 0.65;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.bg-img-1 {
+    background-image: url('../img/html-code.jpg');
+}
+
+.bg-img-2 {
+    background-image: url('../img/setup-1.jpg');
 }
 
 #name {
     margin: 0;
     padding-bottom: 1.5%;
     color: #000;
+    text-align: center;
 }
 
 nav {
     width: 100%;
     height: auto;
+    margin: 2% auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +56,7 @@ nav {
 
 nav a {
     width: 100%;
-    color: #000;
+    color: #fff;
     padding: 1.5%;
 }
 
@@ -53,42 +67,63 @@ nav a:hover {
 }
 
 /* HOMEPAGE STYLES */
-.welcome {
-    border: 1px solid black;
-    width: 100%;
-    height: auto;
-    display: flex;
-    text-align: center;
-    /* color: #fff; */
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    /* background-image: url('../img/html-code.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat; */
-}
-
-/* .welcome article {
-    width: auto;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-} */
-
 a.btn {
     margin: 2%;
     padding: 2%;
     font-weight: bold;
 }
 
-/* EDUCATION & EXPERIENCES PAGES STYLES */
+/* EDUCATION PAGE STYLES */
+#education {
+    width: 80%;
+    height: 100%;
+    margin: 2% auto;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* EXPERIENCES PAGE STYLES */
+.bookmarks {
+    margin: 3% auto;
+    text-align: center;
+}
+
+.bookmarks p {
+    margin: 0;
+}
+
+#work-experiences, #volunteer-experiences {
+    width: 80%;
+    height: 100%;
+    margin: 2% auto;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.desc {
+    padding-left: 2.5%;
+}
+
+/* EDUCATION & EXPERIENCES PAGES SHARED STYLES */
+.event {
+    padding: 2%;
+}
+
+.location {
+    font-style: italic;
+}
 
 /* PROJECTS PAGE STYLES */
 
 /* ABOUT PAGE STYLES */
-
 .bio {
     width: 100%;
     height: auto;
@@ -119,17 +154,20 @@ a.btn {
     text-align: center;
 }
 
+.prog-language {
+    margin: 2.5%;
+}
 
 /* CONTACTS PAGE STYLES */
 
 
 /* GLOBAL STYLE SETTINGS */
 footer {
-    border: 1px solid black;
     width: 100%;
     height: auto;
     /* position: fixed;
     bottom: 0; */
+    margin: 3% auto;
     background-color: #fff;
     opacity: 0.8;
     color: #000;
@@ -157,10 +195,6 @@ footer h4 {
 .fa-facebook {
     margin: auto 2.5%;
     text-decoration: none;
-}
-
-.prog-language {
-    margin: 2.5%;
 }
 
 /* GLOBAL MEDIA QUERIES */

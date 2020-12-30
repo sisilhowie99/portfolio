@@ -117,6 +117,7 @@ a.btn {
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .desc {
@@ -174,12 +175,13 @@ a.btn {
 .languages {
     width: auto;
     height: 100%;
-    margin: 4% auto;
+    margin: 2% auto;
     text-align: center;
 }
 
 .languages p {
     font-size: 1.3em;
+    margin: 0;
 }
 
 .prog-language {
